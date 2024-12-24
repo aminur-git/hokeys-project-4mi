@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey's || Project</title>
+
+  <!-- Tailwind Css and Daisy UI CDN -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font: Manrope -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'pred': '#FF4240',
+            'ngray': '#424247',
+            'bgblack': '#131318',
+            'para': '#FFFFFF99',
+            'pri-para': '#13131899',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font - Manrope Class assign -->
+  <style>
+    .manrope {
+      font-family: "Manrope", serif;
+    }
+  </style>
+
+</head>
+
+<body class="manrope px-3 lg:px-14 container mx-auto space-y-24">
+
+  <!-- header  -->
+  <section class="md:mt-12">
+    <nav class="mt-">
+      <div class="navbar p-0 bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class=" pr-5 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="flex flex-col dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-3">
+              <div>
+                <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Home</a>
+              </div>
+              <div>
+                <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">About</a>
+              </div>
+              <div>
+                <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Pages</a>
+              </div>
+              <div>
+                <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Blog</a>
+              </div>
+              <div>
+                <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Contact</a>
+              </div>
+            </ul>
+          </div>
+          <a href="#" class="pr-5"><img src="Images/logo.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex ">
+          <div class="flex gap-11 justify-between px-1">
+            <div>
+              <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold ">Home</a>
+            </div>
+            <div>
+              <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">About</a>
+            </div>
+            <div>
+              <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Pages</a>
+            </div>
+            <div>
+              <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Blog</a>
+            </div>
+            <div>
+              <a href="/#" rel="noopener noreferrer" class="text-ngray hover:text-pred hover:font-bold">Contact</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="navbar-end gap-3 justify-end">
+          <img class="hover:scale-150 hover:-translate-x-1 hover:rotate-12 duration-1000 cursor-pointer "
+            src="Images/search.png" alt="">
+          <a class="btn px-6 py-4 h-auto hover:bg-red-600 text-white text-[0.8rem] md:text-xl bg-pred ">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1st+2nd banner - flex-container  -->
+    
+
+      <!-- 1st banner container -->
+      <div class="mt-6 md:mt-12 mx-auto ">
+        <!-- carousel -->
+        <div
+          class="carousel w-full   mx-auto  relative   sm:max-h-[290px] sm:max-w-[616px] md:max-w-[744px] md:max-h-[350px] lg:max-w-[912px] lg:max-h-[430px] xl:max-w-[1170px] xl:max-h-[550px] 2xl:max-w-[1424px] 2xl:max-h-[670px] gap-1">
+          <div id="slide1" class="carousel-item relative w-full mx-auto ">
+            <img src="Images/1.png" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide4" class="btn btn-circle btn-sm bg-black border-none text-white">❮</a>
+              <a href="#slide2" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide1" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❮</a>
+              <a href="#slide3" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide2" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❮</a>
+              <a href="#slide4" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/4.png" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❮</a>
+              <a href="#slide1" class="btn   btn-circle btn-sm bg-black border-none text-white  ">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd banner container -->
+      <div class="flex max-w-[1424px] justify-end lg:pr-6  lg:relative     2xl:bottom-40 md:bottom-40">
+        <div class="bg-bgblack rounded-xl mt-4 p-4 lg:max-w-[566px]">
+          <h1 class="font-extrabold text-lg text-white text-left">Meet all the heroes from the field</h1>
+          <p class="mt-2 text-para text-sm font-medium ">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam
+            proin.
+          </p>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- main -->
+  <!-- Professional Hockeys Club -->
+  <section>
+    <!-- pro-main -->
+    <div> 
+      <!-- Title and Para -->
+      <div class="max-w-xl p-5 mx-auto space-y-4 md:space-y-6">
+
+        <h1 class="text-center text-[22px] md:text-2xl lg:text-3xl font-extrabold">
+          Professional Hockeys Club
+        </h1>
+        <p class="text-pri-para text-center text-sm md:text-base  font-medium ">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+        </p>
+      </div>
+      <hr class="hidden md:flex">
+
+      <!-- Efficiency and ranking -->
+      <div>
+        <!-- Efficiency Container -->
+        <div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
